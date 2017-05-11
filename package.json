@@ -1,0 +1,10 @@
+{
+  "name": "gas-google-calendar-to-slack-status-farm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/google-apps-script": "^0.0.11",
+    "typescript": "^2.3.2"
+  }
+}
