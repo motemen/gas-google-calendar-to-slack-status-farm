@@ -89,6 +89,9 @@ function getCurrentStatusFromCalendarEvent() {
         if (event_1.getMyStatus() === CalendarApp.GuestStatus.NO) {
             continue;
         }
+        if (event_1.isAllDayEvent()) {
+            continue;
+        }
         var title = event_1.getTitle();
         var emoji = ':spiral_calendar_pad:';
         if (/(:[^:]+:)/.test(title)) {

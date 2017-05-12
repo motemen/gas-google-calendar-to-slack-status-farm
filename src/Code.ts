@@ -111,6 +111,10 @@ function getCurrentStatusFromCalendarEvent(): SlackProfile {
       continue;
     }
 
+    if (event.isAllDayEvent()) {
+      continue;
+    }
+
     let title = event.getTitle();
     let emoji = ':spiral_calendar_pad:';
     if (/(:[^:]+:)/.test(title)) {
