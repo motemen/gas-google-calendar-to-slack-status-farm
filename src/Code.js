@@ -1,11 +1,4 @@
 "use strict";
-// declare namespace GoogleAppsScript {
-//   module Calendar {
-//     interface CalendarApp {
-//       GuestStatus: typeof GuestStatus;
-//     }
-//   }
-// }
 var OAuth2;
 var SLACK_CLIENT_ID = '';
 var SLACK_CLIENT_SECRET = '';
@@ -99,7 +92,7 @@ function getCurrentStatusFromCalendarEvent() {
             title = title.replace(/\s*:[^:]+:\s*/, '');
         }
         else if (/休/.test(title)) {
-            emoji = ':yasumi:';
+            emoji = ':palm_tree:';
         }
         else if (/早退|遅刻/.test(title)) {
             emoji = ':bus:';
